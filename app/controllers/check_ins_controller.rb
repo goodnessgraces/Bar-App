@@ -10,6 +10,7 @@ class CheckInsController < ApplicationController
   # GET /check_ins/1
   # GET /check_ins/1.json
   def show
+  
   end
 
   # GET /check_ins/new

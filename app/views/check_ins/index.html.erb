@@ -1,7 +1,19 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Listing Check Ins</h1>
-
+<div class="container">
+<div class ="row">
+  <% @check_ins.each do |check_in| %>
+  <div class= "col-md-6">
+    <div class="panel panel-default">
+    <div class="panel-heading">
+    <%= link_to 'Show', check_in %>
+  </div>
+  </div>
+  </div>
+  <% end %>
+  </div>
+  </div>
 <table>
   <thead>
     <tr>

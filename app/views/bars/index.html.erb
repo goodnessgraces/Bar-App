@@ -16,6 +16,7 @@
   </thead>
 
   <tbody>
+ 
     <% @bars.each do |bar| %>
       <tr>
         <td><%= bar.name %></td>
@@ -23,14 +24,18 @@
         <td><%= bar.hours %></td>
         <td><%= bar.specials %></td>
         <td><%= bar.disclaimer %></td>
-        <td><%= bar.application %></td>
+        <td><em> <%= link_to 'Apply to: '+  bar.name , new_application_path%></em></td>
+      
         <td><%= link_to 'Show', bar %></td>
         <td><%= link_to 'Edit', edit_bar_path(bar) %></td>
         <td><%= link_to 'Destroy', bar, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
+
   </tbody>
+
 </table>
+
 
 <br>
 
